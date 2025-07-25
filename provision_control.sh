@@ -28,7 +28,7 @@ install minikube-linux-amd64 /usr/local/bin/minikube && rm minikube-linux-amd64 
 minikube start --driver=docker
 
 # Minikube dashboard
-minikube dashboard --url --no-browser
+minikube dashboard --url=false --port=9090
 kubectl get pods -n kubernetes-dashboard
 kubectl port-forward -n kubernetes-dashboard service/kubernetes-dashboard 9000:80
 
