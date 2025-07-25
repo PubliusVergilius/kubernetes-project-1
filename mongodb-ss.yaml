@@ -1,4 +1,4 @@
-apiVersion: v1
+apiVersion: apps/v1
 kind: StatefulSet
 metadata:
   name: mongodb-ss
@@ -8,7 +8,7 @@ spec:
       app: mongodb
   serviceName: mongodb-svc
   replicas: 1
-  templat:
+  template:
     metadata:
       labels:
         app: mongodb
