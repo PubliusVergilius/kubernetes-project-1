@@ -8,7 +8,7 @@ spec:
       app: mongodb
   serviceName: mongodb-svc
   replicas: 1
-  template:
+  templat:
     metadata:
       labels:
         app: mongodb
@@ -33,19 +33,19 @@ spec:
             value: colordb 
           - name: DB_USER
             valueFrom: 
-              secretRefKey:
+              secretKeyRef:
                 key: username
                 name: mongodb-root-creds
           - name: DB_PASSWORD
             valueFrom: 
-              secretRefKey:
+              secretKeyRef:
                 key: password
                 name: mongodb-root-creds
 
         volumeMounts:
           - mountPath: /data/db
             name: mongodb-data
-          - mountPath: /docker-enr
+          - mountPath: /docker-entrypoint-initdb.d
             name: mongodb-init-config
     volumes:
       - name: mongodb-init-config
