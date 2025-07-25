@@ -6,6 +6,6 @@ metadata:
     app: mongodb 
 type: Opaque
 data:
-  username: colordb_user
-  password: colordb_password
+  username: Y29sb3JkYl91c2Vy
+  password: Y29sb3JkYl9wYXNzd29yZA==
 

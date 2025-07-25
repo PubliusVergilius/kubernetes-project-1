@@ -44,7 +44,7 @@ spec:
         volumeMounts:
           - mountPath: /data/db
             name: mongodb-data
-          - mountPath: /docker-enrt
+          - mountPath: /docker-enr
             name: mongodb-init-config
     volumes:
       - name: mongodb-init-config

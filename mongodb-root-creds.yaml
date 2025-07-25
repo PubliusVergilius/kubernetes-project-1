@@ -6,6 +6,6 @@ metadata:
     app: mongodb 
 type: Opaque
 data:
-  username: root_user
-  password: root_password
+  username: cm9vdF91c2Vy
+  password: cm9vdF9wYXNzd29yZA==
 
