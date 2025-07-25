@@ -41,16 +41,15 @@ spec:
               secretKeyRef:
                 key: password
                 name: mongodb-root-creds
-
         volumeMounts:
           - mountPath: /data/db
             name: mongodb-data
           - mountPath: /docker-entrypoint-initdb.d
             name: mongodb-init-config
-    volumes:
-      - name: mongodb-init-config
-        configMap:
-          name: mongodb-init-colordb
+      volumes:
+        - name: mongodb-init-config
+          configMap:
+            name: mongodb-init-colordb
   volumeClaimTemplates:
   - metadata:
       name: mongodb-data
