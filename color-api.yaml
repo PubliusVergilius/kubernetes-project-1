@@ -30,6 +30,7 @@ spec:
               valueFrom:
                 secretKeyRef:
                   key: password
+                  name: mongodb-colordb-creds
             - name: DB_HOST
               value: "mongodb-ss-0.mongodb-svc.default.svc.cluster.local"
             - name: DB_PORT
